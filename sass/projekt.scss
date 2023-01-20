@@ -1,0 +1,485 @@
+@import 'colors';
+@import 'animacje';
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-padding-top: 82px;
+}
+
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $bg-color;
+}
+
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.blue-text {
+    color: $main-color;
+}
+
+.underline {
+    margin: 0 auto 40px;
+    width: 60px;
+    height: 4px;
+    background-color: $main-color;
+}
+
+.shadow-bg {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+nav {
+    text-transform: uppercase;
+    transition: background-color 0.6s;
+    z-index: 10;
+
+    .nav-link, .navbar-brand, .navbar-toggler{
+    color: $white;
+    }
+
+    .nav-link:hover, .navbar-brand:hover, .navbar-toggler:hover {
+        color: $main-color;
+    }
+
+    .navbar-brand {
+        font-weight: bold;
+    }
+
+    .navbar-brand:visited {
+        color: white;
+    }
+
+    .fa-bars {
+        padding: 10px;
+    }
+
+    
+    .active {
+        color: $main-color !important; 
+    }
+
+    .one:focus {
+        color: rgba(255, 255, 255 , 1);
+    }
+}
+
+
+.header {
+    position: relative;
+    background-image: url(/Projekt/img/playstation-gd11c83160_640.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    background-attachment: fixed;
+}
+
+.heroImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0, 0, 0, .8);
+    
+}
+
+.heroText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+
+   
+
+    h1 {
+        text-transform: uppercase;
+        color: $white;
+        font-size: 30px;
+
+        span {
+        color: $main-color
+        }
+    }
+
+    p {
+        text-align: center;
+        color: $white;
+        font-size: 14px;
+    }
+
+}
+
+.btn-outline-light {
+    text-transform: uppercase;
+}
+
+.fa-chevron-down {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 30px;
+}
+
+.aboutus {
+    i {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+
+.aboutus-hover:hover {
+    color: $main-color;
+}
+
+.aboutus-card-title {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.aboutus-card-text {
+    font-size: 14px;
+}
+}
+
+.aboutus-hero {
+    position: relative;
+    background-image: url(/Projekt/img/technology-g6f7e0f869_640.jpg);
+    background-position: center;
+    background-size: cover;
+    color: $light-gray;
+    z-index: 0;
+
+    .aboutus-shadow {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .7);
+        z-index: -5;
+    }
+
+    .aboutus-hero-item {
+        margin: 10px 0;
+
+        i {
+            font-size: 36px;
+        }
+
+        .aboutus-hero-title {
+            font-size: 24px;
+        }
+    }
+}
+
+.portfolio-carousel {
+    position: relative;
+
+    .imgPort {
+        height: 22rem;
+    }
+    
+ 
+    .carousel-shadow {
+        position: absolute;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, .7);
+    }
+
+    .carousel-indicators {
+        padding-bottom: 20px;
+    }
+
+    .card-img-top {
+        height: 10rem;
+    }
+
+}
+
+/* CENY */
+
+.prices {
+
+    .price-box {
+        margin: 20px 10px;
+        padding: 30px;
+        border: outset;
+        box-shadow: 5px 5px 8px rgba(8, 8, 8, .6);
+        transition: transform 0.3s;
+        background-color: $white;
+        
+        span {
+            font-weight: bold;
+        }
+        
+        i {
+            margin: 0 5px;
+            font-size: 20px;
+        }
+
+        .price-tag {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .btn {
+            text-transform: uppercase;
+            padding: 10px 20px;
+        }
+        
+    }
+    
+    .price-box:hover {
+        transform: scale(1.05);
+    }
+    
+    h3 {
+        text-transform: uppercase;
+        color: $main-color;
+    }
+
+    .price-info {
+        margin-top: 30px;
+    }
+
+    p {
+        text-align: center;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+}
+
+/* TEAM */
+
+
+.team {
+    position: relative;
+    background-image: url(/Projekt/img/seminar-room-g9a263263f_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    .shadow-team {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .5);
+
+    }
+    
+    .card-body {
+        height: 12rem;
+    }
+
+    .card-group {
+        margin: 0 0 100px;
+    }
+
+    .card {
+        margin: 0 30px 50px;
+        transition: transform .3s;
+
+        .card-title {
+            margin-bottom: 20px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+    .card-img-top {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    h2 {
+        position: relative;
+        color: #ddd;
+        z-index: 5;
+    }
+
+    a {
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+
+        i {
+        padding: 10px;
+        color: $main-color;
+        }
+    }
+
+    .underline {
+        position: relative;
+        z-index: 1;
+    }
+
+    .card:hover {
+        transform: scale(0.96);
+    }
+}
+
+
+/* Osiągnięcia */
+
+    .achievements {
+
+        .achive-items {
+            padding: 20px 0;
+        }
+        
+        i {
+            text-shadow: 0 0 5px black;
+            color: $white;
+            padding: 10px;
+            font-size: 42px;
+        }
+
+        .p-down {
+            font-size: 14px;
+            text-transform: uppercase;
+
+        }
+
+        .p-top {
+            font-size: 22px;
+        }
+
+    }
+
+
+    /* Kontakt */
+
+    .contact {
+        position: relative;
+        background-image: url(/Projekt/img/skyline-gd16175e88_1280.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        color: $white;
+        z-index: 1;
+
+        .contact-us {
+            display: flex;
+            align-items: center;
+        }
+
+    }
+
+    .contact-item {
+
+        margin: 30px 0;
+
+        h3 {
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        i {
+            padding: 10px;
+            font-size: 22px;
+            color: white;
+        }
+
+        i:hover {
+            color: $light-gray;
+        }
+    }
+    
+    .contact-shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,9,27, .85);
+        top: 0;
+        z-index: -5;
+       
+    }
+
+
+@media (min-width: 375px) {
+    .header {
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+        font-size: 16px;
+        }
+    }
+}
+
+@media(min-width: 576px) {
+    .c-first {
+        margin-right: 1rem;
+    }
+
+    .c-second {
+        margin-left: 1rem;
+    }
+
+}
+
+@media (min-width: 768px) {
+    .header {
+        h1 {
+            font-size: 42px;
+        }
+
+        p {
+        font-size: 20px;
+        }
+    }
+}
+
+
+
+@media(min-width: 992px) {
+  nav {
+    height: 82px;
+  }
+
+  .aboutus-hero {
+    background-image: url(/Projekt/img/technology-g0d6185184_1280.jpg);
+}
+
+ .portfolio-carousel {
+        margin: 0 20% 3%;
+    } 
+
+
+    .prices {
+        .price-info {
+            font-size: 18px;
+        }
+    }
+}
+
+@media(min-width: 1200px) {
+    .header {
+        background-image: url(/Projekt/img/playstation-g593c05129_1920.jpg);
+    }
+
+}
